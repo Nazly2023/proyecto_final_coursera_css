@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+* {
+  box-sizing: content-box;
+  margin: 0%;
+}
+
+.encabezado {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100px;
+  background-color: blanchedalmond;
+  padding: 0;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+.menu a {
+  text-decoration: none;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 30px;
+}
+a:hover {
+  color: #8c1b69;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 80%;
+  height: 100%;
+  cursor: pointer;
+}
+.container_main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  width: 100%;
+  height: 500px;
+  background-color: #b0ffcc9b;
+}
+.container_main > div {
+  background-color: #2b1d37;
+  height: auto;
+  color: white;
+  margin: 1%;
+}
+.container_tej {
+  grid-column: 1 / span 2;
+  border-radius: 1%;
+  overflow: hidden;
+}
+.container_tej > img {
+  display: inline;
+  border-radius: 5px;
+  background-size: cover;
+  width: 42%;
+  height: 100%;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.container_tej > .img1 {
+  transform: translate(0px, 0px);
+  clip-path: polygon(0% 0%, 37% 0%, 70% 50%, 37% 100%, 0% 100%);
+}
+.container_tej > .img2 {
+  transform: translate(187px, 0px);
+  clip-path: polygon(63% 0%, 100% 0%, 100% 100%, 63% 100%, 30% 50%);
+  object-fit: cover;
+}
+h3 {
+  color: #fff0b0;
+  transform: translate(-45%, -400%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+}
+.container_tej > h4 {
+  color: #fff0b0;
+  transform: translate(-50%, -100%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 50px;
+}
+.container_crochet,
+.container_knit {
+  display: flex;
+  border-radius: 1%;
+  overflow: hidden;
+}
+.text_crochet,
+.text_knit {
+  font-family: "Poetsen One", sans-serif;
+  text-align: center;
+}
+.text_crochet > h4,
+p {
+  transform: translate(10%, 20%);
+  padding-top: 10%;
+}
+.text_crochet > p {
+  color: #ffe9b0;
+}
+.text_crochet > h4 {
+  color: #ffe0b0;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 10%;
+}
+
+.container_crochet > img {
+  clip-path: circle(35% at 50% 50%);
+}
+.container_knit > img {
+  clip-path: circle(35% at 50% 50%);
+}
+.text_knit > p {
+  color: #ffe9b0;
+}
+.text_knit > h4 {
+  color: #ffe0b0;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 10%;
+}
+.text_knit > h4,
+p {
+  transform: translate(10%, 20%);
+  padding-top: 10%;
+}
+.container_footer {
+  position: static;
+  background-color: #2b1d37;
+  color: #fff0b0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  padding: 0;
+  margin: 0;
+  height: 10%;
+}
+.dr {
+  justify-content: flex-start;
+  color: #fff0b0;
+  text-align: justify;
+  font-family: "Poetsen One", sans-serif;
+  padding: 0;
+  display: flex;
+  margin: auto 1%;
+  padding: 15px;
+}
+.socialMedia {
+  text-align: right;
+  justify-content: flex-end;
+  padding: 0;
+  margin: auto 1%;
+}
+.socialMedia i {
+  margin: 0.5%;
+}

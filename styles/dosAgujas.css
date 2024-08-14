@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap");
+
+.offpage {
+  position: absolute;
+  left: -1000px;
+  z-index: -999;
+  transition: left 0.3s ease-in-out;
+  overflow: auto;
+  border: 0px;
+  margin: 0 0 10px 10px;
+}
+.offpage:focus {
+  position: static;
+  left: 1px;
+  top: 1px;
+  z-index: 1000;
+  background-color: blanchedalmond;
+  padding: 1px 5px;
+  visibility: visible;
+}
+.container_offpage {
+  width: 100%;
+  background-color: blanchedalmond;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+  padding-left: 1%;
+  justify-content: space-around;
+}
+
+section > div {
+  background-color: #551a8b;
+  padding: 1%;
+  margin: 10px;
+  border-radius: 2%;
+}
+
+div > img {
+  object-fit: contain;
+  width: 90%;
+  height: 75%;
+  cursor: zoom-in;
+  border-radius: 2%;
+  margin: 0 5%;
+  transition: 0.5s;
+}
+h4 {
+  color: antiquewhite;
+  font-family: "Poetsen One", sans-serif;
+  text-align: left;
+}
+div {
+  width: 22%;
+  height: calc(10% * width);
+  word-wrap: break-word;
+}
+p {
+  font-family: "Playwrite NZ", cursive;
+  overflow: hidden;
+  margin: 0%;
+}
+.desc {
+  font-size: 12px;
+}
+.text {
+  width: 90%;
+  transform: translate(0px, 0px);
+  color: #fff;
+}
+div > img:hover {
+  transform: scale(1.5);
+}

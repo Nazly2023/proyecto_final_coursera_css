@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+* {
+  box-sizing: content-box;
+  margin: 0%;
+}
+.encabezado {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100px;
+  background-color: blanchedalmond;
+  padding: 0;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 0 0 5%;
+}
+.menu a {
+  text-decoration: none;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 30px;
+  color: #551a8b;
+  margin: auto 0;
+}
+a:hover {
+  color: #8c1b69;
+}
+li {
+  list-style: none;
+}
+.logo {
+  width: 80%;
+  height: 100%;
+  cursor: pointer;
+}
+a:focus {
+  border: 2px solid #8c1b69;
+}
